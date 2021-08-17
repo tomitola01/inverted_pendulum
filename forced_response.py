@@ -49,14 +49,14 @@ F_input = np.sin(100*t_span**2)
 t_out, x3_out = C.forced_response(G_theta, t_span, F_input)
 #for x(t) vs t
 t_out, x1_out = C.forced_response(G_x, t_span, F_input)
-#for θ(t) vs t
+#for trajectory of θ(t)
 plt.plot(t_out, x3_out)
-#for x(t) vs t
+#for trajectory of x(t)
 plt.plot(t_out, x1_out)
 plt.xlabel('Time (s)')
-#for θ(t) vs t
+#for y axis label θ(t) vs t
 plt.ylabel('θ(t)')
-#for x(t) vs t
+#for y axis label x(t) vs t
 plt.ylabel('x(t)')
 plt.grid()
 plt.show()
